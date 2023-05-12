@@ -1,0 +1,129 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+    padding: 0 10px;
+}
+.container{
+   max-width :500px;
+   width:500px;
+   background-color: white;
+   padding: 20px;
+   margin:20px auto;
+   box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+
+}
+.container .title{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom: 25px;
+    color:aquamarine;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.container .form{
+    width: 100%;
+}
+
+.container .form .input_field{
+   margin-bottom: 15px;
+   display:flex;
+   align-items:center;
+}
+.container .form .input_field label{
+     
+     width:50%;
+}
+.container .form .input_field .input,
+.container .form .input_field textarea
+{
+    
+    width:100%;
+    outline:none;
+    border:3px solid aquamarine;
+    font-size:15px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.container .form .input_field .textarea{
+    resize: none;
+    height:50px;
+}
+.container .form .input_field .selectbox{
+    position:relative;
+    height:39px;
+    width:100%;
+    border-radius: 8px;
+    border:3px solid aquamarine;
+    outline:none;
+}
+.container .form .input_fields .btn{
+    margin-top: 10px;
+    padding:10px;
+    width:100%;
+    color:black;
+  
+    outline:none;
+    border:1px solid aquamarine;
+    cursor: pointer;
+    border-radius:5px;
+
+}
+.container .form .input_fields .btn:hover{
+background:aquamarine;
+}
+
+.container .form .input_field .input:focus,
+.container .form .input_field .textarea:focus,
+.container .form .input_field select:focus
+{
+    border:2px solid black;
+}
+.container .form .input_field_terms p{
+    font-size:14px;
+    color:#757575;
+}
+.container .form .input_field .check{
+width:15px;
+height:15px;
+position:relative;
+display:block;
+cursor: pointer;
+}
+
+.container .form .input_field .check input[type="checkbox"]{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+
+.container .form .input_field .check .checkmark{
+    width:15px;
+    height:15px;
+    border:1px solid aquamarine;
+    display:block ;
+    position: relative;
+    background:green;
+
+}
+
+@media (max-width:420px)
+{
+    .container .form .input_field{
+       flex-direction: column;
+       align-items: flex-start;
+     }
+     .container .form .input_field label{
+        margin-bottom: 15px;
+     }
+}
+
+
