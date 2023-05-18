@@ -12,7 +12,7 @@ if($_POST['reg']){
 
     $sql="insert into registration(firstName,lastName,password,cPassword,gender,email,phone,address) values('$fn','$ln','$pass','$confirmpwd','$g','$e','$p','$a')";
     $qry=mysqli_query($conn,$sql);
-    header("LOcation:form.php");
+    header("LOcation:login.php");
 
 }
 ?> 
